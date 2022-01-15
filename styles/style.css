@@ -1,0 +1,16 @@
+.universal {
+    color: cadetblue;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 200px;
+    justify-self: auto;
+}
+
+img {
+    display: flex;
+    justify-self: auto;
+}
