@@ -43,30 +43,19 @@ body {
 
 .likes {
     color: white;
-}
-
-.happy-joey {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-top: 100px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  padding: 5px;
-  width: 150px;
+    border: solid gold 2px;
 }
 
 .dislikes {
     color: white;
-}
+    border: solid gold 2px;
+  }
 
-.sad-joey {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    margin-top: 100px;
-    border: 1px solid #ddd;
+  .happy-sad {
+  border: 1px solid #ddd;
   border-radius: 4px;
   padding: 5px;
-  width: 150px;
+  margin: 5px;
+  width: 300px;
 }
+
