@@ -1,0 +1,173 @@
+
+.interest {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  color: rgb(234, 255, 0);
+  background-color: fuchsia;
+  
+  height: 300px;
+  width: 400px;
+  background: linear-gradient(90deg, rgba(131, 83, 11, 0.523) 50%, transparent 50%), linear-gradient(90deg, rgb(255, 0, 0) 50%, transparent 50%), linear-gradient(0deg, blue 50%, transparent 50%), linear-gradient(0deg, blue 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 25px 9px, 65px 15px, 4px 5px, 40px 1px;
+  background-position: 0px 0px, 400px 300px, 0px 200px, 400px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+@keyframes border-dance {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+  100% {
+    background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
+}
+
+
+.bio__interests {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  flex: wrap;
+  border: 1px solid rgb(170, 255, 0);
+
+
+  height: 100%;
+  text-align: center;
+  
+  /* animation properties */
+  -moz-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  
+  -moz-animation: my-animation 5s linear infinite;
+  -webkit-animation: my-animation 5s linear infinite;
+  animation: my-animation 5s linear infinite;
+
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateY(100%); }
+  to { -moz-transform: translateY(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+
+  
+
+
+.random1 {
+  text-align: center;
+  color:rgb(21, 255, 0);
+  font-size: 80px;
+  position: absolute;
+  top: 70%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  
+  -moz-animation: my-animation 1s linear infinite;
+  -webkit-animation: my-animation 1s linear infinite;
+  animation: my-animation 1s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+  from { -moz-transform: translateX(100%); }
+  to { -moz-transform: translateX(-100%); }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+  from { -webkit-transform: translateX(100%); }
+  to { -webkit-transform: translateX(-100%); }
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+}
+
+.eyes {
+  position: relative;
+  text-align: center;
+  font-size: 80px;
+  top: 40%;
+  left: 15%;
+  color: rebeccapurple;
+  height: 100px;
+  width: 200px;
+  background: linear-gradient(90deg, rgb(128, 255, 0) 50%, transparent 50%), linear-gradient(90deg, rgb(212, 0, 255) 50%, transparent 50%), linear-gradient(0deg, rgb(149, 255, 0) 50%, transparent 50%), linear-gradient(0deg, rgb(255, 0, 234) 50%, transparent 50%);
+  background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;
+  background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;
+  background-position: 0px 0px, 200px 100px, 0px 100px, 200px 0px;
+  padding: 10px;
+  animation: border-dance 4s infinite linear;
+}
+@keyframes border-dance {
+  0% {
+    background-position: 0px 0px, 300px 116px, 0px 150px, 216px 0px;
+  }
+  100% {
+    background-position: 300px 0px, 0px 116px, 0px 0px, 216px 150px;
+  }
+}
+
+
+
+.english {
+  position: relative;
+  left: 10%;
+  top: -50%;
+  bottom: 20%;
+  right: 10%;
+  z-index: 20;
+  background-color: yellow;
+  font-size: 30px;
+  clip-path: polygon(50% 25%, 75% 75%, 25% 75%);
+  position:relative
+}
+
+.photo:hover {
+  opacity:0.8; 
+  position: relative;
+    border: 60px solid red;
+    position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -40;
+  width: 400%;
+  
+}
